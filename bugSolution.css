@@ -1,0 +1,7 @@
+/* bugSolution.css */
+.element {
+  width: calc(max(0px, 100% - 200px)); /* Use max() to ensure non-negative width */
+  background-color: lightblue;
+  padding: 10px;
+}
+/*This solution ensures that if 100% -200px is negative, the width will default to 0px instead of a potentially unexpected negative value.  This is more robust cross-browser*/
